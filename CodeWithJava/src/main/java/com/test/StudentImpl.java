@@ -2,6 +2,7 @@ package com.test;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StudentImpl 
 {
@@ -16,6 +17,12 @@ public class StudentImpl
 						studentList.add(new Student(5, "Gani", "Guntur"));
 						studentList.add(new Student(10, "Gowri", "Bangalore"));
 						studentList.add(new Student(7, "Lakshmi", "Kolar"));
+						
+						
+						// print the city with students count,
+						studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
+
+
 	}
 
 }
