@@ -1,10 +1,11 @@
-package com.product;
+package com.codeWith;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CodeWithJavaApplication {
+public class CodeWithJavaApplication 
+{
 
 	public static void main(String[] args) {
 		SpringApplication.run(CodeWithJavaApplication.class, args);

@@ -8,11 +8,11 @@
 		<version>3.1.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.micros</groupId>
-	<artifactId>Product-Service</artifactId>
+	<groupId>Java</groupId>
+	<artifactId>CodeWithJava</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>CodeWithJava</name>
-	<description>product service module</description>
+	<description>java code snippets </description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
