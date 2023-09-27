@@ -35,12 +35,11 @@ public class StudentImpl2
 							}
 						});
 						
-						// putAll()
-						stList1.putAll(stList);
-						System.out.println(stList1);
+						// using the Comparator,
+						Map<String, Long> stList2 = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
+						System.out.println(stList2);
 						
-						stList1 = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
-						System.out.println(stList1);
+
 	}
 
 }
