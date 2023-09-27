@@ -1,6 +1,7 @@
 package com.test;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -29,9 +30,16 @@ public class StudentImpl
 						System.out.println(stList);
 						
 						
-						// TreeMap doesn't have null key and keys are sorted.
+						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
+						System.out.println("*****Natural Sorting Order*******");
 						Map<String, Long> sortedList = new TreeMap<>(stList);
 						System.out.println(sortedList);
+						
+						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
+						System.out.println("*****Reverse Sorting Order*******");
+						Map<String, Long> revList = new TreeMap<>(Collections.reverseOrder());
+											revList.putAll(stList);
+						System.out.println(revList);
 
 	}
 
