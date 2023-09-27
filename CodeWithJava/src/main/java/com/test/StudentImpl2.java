@@ -1,13 +1,9 @@
 package com.test;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 
-public class StudentImpl 
+public class StudentImpl2 
 {
 
 	public static void main(String[] args) 
@@ -29,16 +25,15 @@ public class StudentImpl
 						System.out.println(stList);
 						
 						
-						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
-						System.out.println("*****Natural Sorting Order*******");
-						Map<String, Long> sortedList = new TreeMap<>(stList);
-						System.out.println(sortedList);
-						
-						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
-						System.out.println("*****Reverse Sorting Order*******");
-						Map<String, Long> revList = new TreeMap<>(Collections.reverseOrder());
-											revList.putAll(stList);
-						System.out.println(revList);
+						// Sort the HashMap by keys, using the customized Comparator,( with strings as keys is sorted in increasing order of length of keys by passing customized)
+						Map<String, Long> stList1 = new TreeMap<>(new Comparator<String>() 
+						{
+							@Override
+							public int compare(String s1, String s2)
+							{
+								return s1.length() - s2.length();
+							}
+						});
 
 	}
 
