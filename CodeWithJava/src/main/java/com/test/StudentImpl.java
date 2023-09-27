@@ -17,11 +17,13 @@ public class StudentImpl
 						studentList.add(new Student(4, "Bhas", "Kolar"));
 						studentList.add(new Student(5, "Gani", "Guntur"));
 						studentList.add(new Student(10, "Gowri", "Bangalore"));
+						studentList.add(new Student(16, "Tulasi", "Bangalore"));
+						studentList.add(new Student(20, "Amar", "Adyar"));
 						studentList.add(new Student(7, "Lakshmi", "Kolar"));
 						
 						
 						// print the city with students count,
-						studentList.stream().sorted(Comparator.comparing(String::)).collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
+						studentList.stream().sorted(Comparator.comparing(Student::getStCity)).collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
 
 
 	}
