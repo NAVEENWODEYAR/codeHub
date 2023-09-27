@@ -3,6 +3,7 @@ package com.test;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StudentImpl 
@@ -23,8 +24,8 @@ public class StudentImpl
 						
 						
 						// print the city with students count,
-						studentList.stream().sorted().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
-
+						Map<String, Long> collect = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
+						System.out.println(collect);
 
 	}
 
