@@ -35,9 +35,6 @@ public class StudentImpl2
 							}
 						});
 						
-						// using the Comparator,
-						Map<String, Long> stList2 = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
-						System.out.println(stList2);
 						
 
 	}
