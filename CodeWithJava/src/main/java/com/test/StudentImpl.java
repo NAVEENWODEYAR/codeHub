@@ -20,7 +20,7 @@ public class StudentImpl
 						
 						
 						// print the city with students count,
-						studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
+						studentList.stream().distinct().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
 
 
 	}
