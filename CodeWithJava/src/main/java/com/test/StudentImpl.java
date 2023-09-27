@@ -28,7 +28,10 @@ public class StudentImpl
 						Map<String, Long> stList = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
 						System.out.println(stList);
 						
+						
+						// TreeMap doesn't have null key and keys are sorted.
 						Map<String, Long> sortedList = new TreeMap<>(stList);
+						System.out.println(sortedList);
 
 	}
 
