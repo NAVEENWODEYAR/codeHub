@@ -34,7 +34,13 @@ public class StudentImpl2
 								return s1.length() - s2.length();
 							}
 						});
-
+						
+						// putAll()
+						stList1.putAll(stList);
+						System.out.println(stList1);
+						
+						stList1 = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
+						System.out.println(stList1);
 	}
 
 }
