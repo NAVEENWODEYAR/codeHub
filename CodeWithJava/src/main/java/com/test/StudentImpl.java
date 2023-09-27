@@ -1,6 +1,7 @@
 package com.test;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -20,7 +21,7 @@ public class StudentImpl
 						
 						
 						// print the city with students count,
-						studentList.stream().distinct().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
+						studentList.stream().sorted(Comparator.comparing(String::)).collect(Collectors.groupingBy(Student::getStCity,Collectors.counting())).entrySet().forEach(System.out::println); 
 
 
 	}
