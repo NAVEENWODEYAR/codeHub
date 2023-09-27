@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class StudentImpl 
@@ -24,8 +25,10 @@ public class StudentImpl
 						
 						
 						// print the city with students count,
-						Map<String, Long> collect = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
-						System.out.println(collect);
+						Map<String, Long> stList = studentList.stream().collect(Collectors.groupingBy(Student::getStCity,Collectors.counting()));
+						System.out.println(stList);
+						
+						Map<String, Long> sortedList = new TreeMap<>(stList);
 
 	}
 
