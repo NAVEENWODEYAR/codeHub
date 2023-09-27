@@ -2,10 +2,14 @@ package com.test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.TreeMap;
 import java.util.stream.Collectors;
+
+import com.fasterxml.jackson.databind.ser.impl.MapEntrySerializer;
 
 public class StudentImpl 
 {
@@ -39,6 +43,9 @@ public class StudentImpl
 						Map<String, Long> revList = new TreeMap<>(Collections.reverseOrder());
 											revList.putAll(stList);
 						System.out.println(revList);
+						
+						// Java 8 sort HashMap by keys in natural order 
+											Map<String,Integer> sortedList1 = studentList.stream().sorted(Entry.comparingByKey()).collect(Collectors.toMap(Entry::getKey,Entry::getValue,(e1,e2)->e2,LinkedHashMap::new));
 
 	}
 
