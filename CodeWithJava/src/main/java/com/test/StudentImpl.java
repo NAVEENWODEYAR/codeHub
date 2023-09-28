@@ -1,6 +1,6 @@
 package com.test;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -44,9 +44,8 @@ public class StudentImpl
 											revList.putAll(stList);
 						System.out.println(revList);
 						
-						// Java 8 sort HashMap by keys in natural order 
-											Map<String,Integer> sortedList1 = studentList.stream().sorted().collect(Collectors.toMap(Entry::getKey,Entry::getValue,(e1,e2)->e2,LinkedHashMap::new));
 
+	
 	}
 
 }
