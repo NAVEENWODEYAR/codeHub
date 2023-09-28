@@ -45,7 +45,7 @@ public class StudentImpl
 						System.out.println(revList);
 						
 						// Java 8 sort HashMap by keys in natural order 
-											Map<String,Integer> sortedList1 = studentList.stream().sorted(Entry.comparingByKey()).collect(Collectors.toMap(Entry::getKey,Entry::getValue,(e1,e2)->e2,LinkedHashMap::new));
+											Map<String,Integer> sortedList1 = studentList.stream().sorted().collect(Collectors.toMap(Entry::getKey,Entry::getValue,(e1,e2)->e2,LinkedHashMap::new));
 
 	}
 
