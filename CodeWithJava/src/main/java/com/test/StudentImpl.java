@@ -27,18 +27,18 @@ public class StudentImpl
 						
 						
 						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
-						System.out.println("*****Natural Sorting Order*******");
+						System.out.println("*****Natural Sorting Order*******\n");
 						Map<String, Long> sortedList = new TreeMap<>(stList);
 						System.out.println(sortedList);
 						
 						// TreeMap doesn't have null key and keys are sorted.(natural sorting order)
-						System.out.println("*****Reverse Sorting Order*******");
+						System.out.println("*****Reverse Sorting Order*******\n");
 						Map<String, Long> revList = new TreeMap<>(Collections.reverseOrder());
 											revList.putAll(stList);
 						System.out.println(revList);
 						
 						// LinkedHashmap maintains insertion order,
-						System.out.println("*****Insertion  Order*******");
+						System.out.println("*****Insertion  Order*******\n");
 						Map<String, Long> linkedLst = new LinkedHashMap<>();
 											linkedLst.putAll(stList);
 						System.out.println(linkedLst);
