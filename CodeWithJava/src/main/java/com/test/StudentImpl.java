@@ -37,6 +37,14 @@ public class StudentImpl
 											revList.putAll(stList);
 						System.out.println(revList);
 						
+						// LinkedHashmap maintains insertion order,
+						System.out.println("*****Insertion  Order*******");
+						Map<String, Long> linkedLst = new LinkedHashMap<>();
+											linkedLst.putAll(stList);
+						System.out.println(linkedLst);
+						
+						
+						
 
 	
 	}
