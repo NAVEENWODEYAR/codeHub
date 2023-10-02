@@ -14,7 +14,7 @@ public class StudentImpl
 						studentList.add(new Student(3, "Siva", "Nellore"));
 						studentList.add(new Student(4, "Bhas", "Kolar"));
 						studentList.add(new Student(5, "Gani", "Guntur"));
-						studentList.add(new Student(5, " ", "Kolar"));
+						studentList.add(new Student(5, "Nandi", "Pacharlahalli"));
 						studentList.add(new Student(10, "Gowri", "Bangalore"));
 						studentList.add(new Student(16, "Tulasi", "Bangalore"));
 						studentList.add(new Student(16, "Tulasi", "Bangalore"));
@@ -44,10 +44,5 @@ public class StudentImpl
 											linkedLst.putAll(stList);
 						System.out.println(linkedLst);
 						
-						
-						
-
-	
 	}
-
 }
