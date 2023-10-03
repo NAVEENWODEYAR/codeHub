@@ -8,7 +8,7 @@ public class StudentImpl
 
 	public static void main(String[] args) 
 	{
-		List<Student> studentList = new ArrayList<>(10);
+		List<Student> studentList = new ArrayList<>(1000);
 						studentList.add(new Student(1, "Vasu", "Punganuru"));
 						studentList.add(new Student(2, "Vamsi", "Kadapa"));
 						studentList.add(new Student(3, "Siva", "Nellore"));
