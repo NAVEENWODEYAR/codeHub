@@ -13,10 +13,9 @@ public class StudentImpl
 						studentList.add(new Student(2, "Vamsi", "Kadapa"));
 						studentList.add(new Student(3, "Siva", "Nellore"));
 						studentList.add(new Student(4, "Bhas", "Kolar"));
-						studentList.add(new Student(5, "Gani", "Guntur"));
+						studentList.add(new Student(5, "Gani", "Bangarpet"));
 						studentList.add(new Student(5, "Nandi", "Pacharlahalli"));
 						studentList.add(new Student(10, "Gowri", "Bangalore"));
-						studentList.add(new Student(16, "Tulasi", "Bangalore"));
 						studentList.add(new Student(16, "Tulasi", "Bangalore"));
 						studentList.add(new Student(20, "Amar", "Adyar"));
 						studentList.add(new Student(7, "Lakshmi", "Kolar"));
