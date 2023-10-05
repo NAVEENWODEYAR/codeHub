@@ -1,6 +1,6 @@
 package com.test;
 
-public class StudentImpl2 
+public class Student2Impl 
 {
 
 	public static void main(String[] args) 
