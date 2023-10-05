@@ -1,7 +1,10 @@
 
 package com.stream;
 
+import java.util.List;
 import java.util.stream.Stream;
+
+import javax.sound.midi.Soundbank;
 
 public class StreamIntro2
 {
@@ -30,11 +33,20 @@ public class StreamIntro2
 													new Laptop(17,"Air","Mac",2027,148765));
 							lapStream.forEach(System.out::println);
 		}
+		
+	// 4. Creating streams from collections,
+		static void createFromColln()
+		{
+			List<Integer> intList = List.of(1,6,8,9,4,3,2);
+			Stream<Integer> strmList = intList.stream();
+							System.out.println(strmList.count());
+		}
 	
 	public static void main(String[] args) 
 	{
 		emptyStream();
 		createStrm();
 		createStrms();
+		createFromColln();
 	}
 }
