@@ -4,8 +4,6 @@ package com.stream;
 import java.util.List;
 import java.util.stream.Stream;
 
-import javax.sound.midi.Soundbank;
-
 public class StreamIntro2
 {
 	// 1.empty() : Creates an empty stream
