@@ -10,7 +10,7 @@ public class Student2Impl
 		Set<Student2> studentList = new TreeSet<Student2>(new Comparator() 
 																{
 																	@Override
-																	public int compare(Object o1, Object o2) 
+																	public int compare(Student2 o1, Student2 o2) 
 																	{
 																		return o1.hashCode() - o2.hashCode();
 																	}});
