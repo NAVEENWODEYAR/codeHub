@@ -24,5 +24,18 @@ public class StreamIntro
 	{
 		
 	}
-
+	
+	static
+	{
+		// Characteristics of the streams,
+		System.out.println("\n 1.Streams are not the data structures\n");
+		System.out.println("\n 2.Stream Consumes a data source\n");
+		System.out.println("\n 3.Intermediate And Terminal Operations\n");
+		System.out.println("\n 4. Pipeline Of Operations\n");
+		System.out.println("\n 5.Internal Iteration\n");
+		System.out.println("\n 6.Streams are lazily populated\n");
+		System.out.println("\n 7.Parallel Execution\n");
+		System.out.println("\n 8.Streams are traversable only once\n");
+		System.out.println("\n 9.Short Circuiting Operations\n");		
+	}
 }
