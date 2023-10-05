@@ -7,13 +7,7 @@ public class Student2Impl
 
 	public static void main(String[] args) 
 	{
-		Set<Student2> studentList = new TreeSet<Student2>(new Comparator() 
-																{
-																	@Override
-																	public int compare(Student2 o1, Student2 o2) 
-																	{
-																		return o1.hashCode() - o2.hashCode();
-																	}});
+		Set<Student2> studentList = new TreeSet<>();
 					studentList.add(null);
 					studentList.add(new Student2(1,"Kevin","Clara",27,"Abudabi"));
 					studentList.add(new Student2(10,"Jones","Thomas",27,"Berlin"));
