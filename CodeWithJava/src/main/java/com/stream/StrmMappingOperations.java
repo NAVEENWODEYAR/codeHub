@@ -5,14 +5,27 @@ import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Stream;
 
-public class StrmSelectionOperations 
+public class StrmMappingOperations 
 {
-	// Mapping operations,
-	// 1. map() : Applies a function.,
-	static void returnLength(Set<Laptop> set)
+	// 1. filter() : Selecting with a predicate
+	static void filterLap(Set<Laptop> s)
 	{
-		set.stream().map(lap-> lap.getLapName().length()).forEach(System.out::print);
+				 s.stream().filter(lap -> lap.getLapPrice() >= 100000).forEach(System.out::println);
+				
 	}
+	
+	// 2. selecting only unique values, distinct(),
+	static void uniqueValues(Set<Laptop> set)
+	{
+		set.parallelStream().distinct().forEachOrdered(System.out::println);
+	}
+	
+	// 3. limiting first n elements,limit() and skip().,
+	static void limitElements(Set<Laptop> set)
+	{
+		set.parallelStream().skip(1).limit(4).forEach(System.out::println);
+	}
+	
 	public static void main(String[] args) 
 	{
 		Set<Laptop> lapSet = new HashSet();
@@ -24,9 +37,11 @@ public class StrmSelectionOperations
 					lapSet.add(new Laptop(17,"Air","Mac",2027,148765));
 					
 		// invoke the static methods,
+					filterLap(lapSet);
 					System.out.println("\n************\n");
-					returnLength(lapSet);
+					uniqueValues(lapSet);
 					System.out.println("\n************\n");
+					limitElements(lapSet);
 					System.out.println("\n************\n");
 	}
 }
