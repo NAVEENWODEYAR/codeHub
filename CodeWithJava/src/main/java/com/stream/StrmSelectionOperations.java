@@ -3,6 +3,7 @@ package com.stream;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StrmSelectionOperations 
@@ -12,6 +13,7 @@ public class StrmSelectionOperations
 	static void returnLength(Set<Laptop> set)
 	{
 		set.stream().map(lap-> lap.getLapName().length()).forEach(System.out::print);
+		set.stream().mapToInt(lap -> lap.getLapName().length()).forEach(System.out::println);
 	}
 	public static void main(String[] args) 
 	{
@@ -26,7 +28,6 @@ public class StrmSelectionOperations
 		// invoke the static methods,
 					System.out.println("\n************\n");
 					returnLength(lapSet);
-					System.out.println("\n************\n");
 					System.out.println("\n************\n");
 	}
 }
