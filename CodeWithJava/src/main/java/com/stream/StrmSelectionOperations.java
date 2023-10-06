@@ -24,6 +24,7 @@ public class StrmSelectionOperations
 	{
 		Set<Laptop> lapSet = new HashSet();
 					lapSet.add(new Laptop(1,"X1Carbon","Lenovo",2017,198765));
+					lapSet.add(new Laptop(15,"X1Carbon","Lenovo",2017,198765));
 					lapSet.add(new Laptop(7,"Yoga","Lenovo",2019,98765));
 					lapSet.add(new Laptop(9,"Vostro","Dell",2011,48765));
 					lapSet.add(new Laptop(8,"ThinkPad","Lenovo",2023,98765));
@@ -31,5 +32,7 @@ public class StrmSelectionOperations
 					
 		// invoke the static methods,
 					filterLap(lapSet);
+					System.out.println("\n************\n");
+					uniqueValues(lapSet);
 	}
 }
