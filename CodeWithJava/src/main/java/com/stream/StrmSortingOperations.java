@@ -12,7 +12,8 @@ public class StrmSortingOperations
 	// 1. sorted() : Sorting according to natural order
 	static void naturalSorting(Set<Laptop> set)
 	{
-		set.stream().sequential().forEach(System.out::println);
+//		set.stream().sequential().forEach(System.out::println);
+		set.stream().sorted().forEach(System.out::println);
 	}
 	public static void main(String[] args) 
 	{
