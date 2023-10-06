@@ -6,14 +6,13 @@ import java.util.TreeSet;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class StrmSelectionOperations 
+public class StrmSortingOperations 
 {
-	// Mapping operations,
-	// 1. map() : Applies a function.,
-	static void returnLength(Set<Laptop> set)
+	// Sorting operations,
+	// 1. sorted() : Sorting according to natural order
+	static void naturalSorting(Set<Laptop> set)
 	{
-		set.stream().map(lap-> lap.getLapName().length()).forEach(System.out::print);
-		set.stream().mapToInt(lap -> lap.getLapName().length()).forEach(System.out::println);
+		set.stream().sequential().forEach(System.out::println);
 	}
 	public static void main(String[] args) 
 	{
@@ -27,8 +26,7 @@ public class StrmSelectionOperations
 					
 		// invoke the static methods,
 					System.out.println("\n************\n");
-					returnLength(lapSet);
-					System.out.println("\n************\n");
+					naturalSorting(lapSet);
 					System.out.println("\n************\n");
 	}
 }
