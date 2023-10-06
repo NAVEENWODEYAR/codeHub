@@ -8,8 +8,8 @@ public class StrmReducingOperations
 	// 1. reduce() : Produces a single value
 	static void getSum(int[] nums)
 	{
-		List<int[]> list = Arrays.asList(nums);
-		list.forEach(System.out::println);
+		int sum = Arrays.stream(nums).reduce(0,(a,b)->a+b);
+		System.out.println(sum);
 	}
 	public static void main(String[] args) 
 	{
