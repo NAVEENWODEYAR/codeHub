@@ -20,6 +20,12 @@ public class StrmSelectionOperations
 		set.parallelStream().distinct().forEachOrdered(System.out::println);
 	}
 	
+	// 3. limiting first n elements,limit()
+	static void limitElements(Set<Laptop> set)
+	{
+		set.parallelStream().skip(1).limit(4).forEach(System.out::println);
+	}
+	
 	public static void main(String[] args) 
 	{
 		Set<Laptop> lapSet = new HashSet();
@@ -34,5 +40,8 @@ public class StrmSelectionOperations
 					filterLap(lapSet);
 					System.out.println("\n************\n");
 					uniqueValues(lapSet);
+					System.out.println("\n************\n");
+					limitElements(lapSet);
+					System.out.println("\n************\n");
 	}
 }
