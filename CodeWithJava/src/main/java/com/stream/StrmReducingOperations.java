@@ -12,6 +12,15 @@ public class StrmReducingOperations
 		OptionalInt sum = Arrays.stream(nums).reduce((a,b)-> a+b);
 		System.out.println(sum.getAsInt());
 	}
+	
+	// 2. min()&max() : Finding the minimum & maximum,
+	static void minimumValue(int[] num)
+	{
+		int min = Arrays.stream(num).min().getAsInt();
+		double avg = Arrays.stream(num).average().getAsDouble();
+		int max = Arrays.stream(num).max().getAsInt();
+		System.out.println("\nMinimum value->"+min+"\nAverage value->"+avg+"\nMaximum value->"+max);
+	}
 	public static void main(String[] args) 
 	{
 		getSum(new int[] {2,6,8,9,6,3,2});
