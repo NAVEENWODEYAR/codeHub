@@ -7,12 +7,19 @@ import java.util.stream.Stream;
 
 public class StrmSelectionOperations 
 {
-	// filter() : Selecting with a predicate
+	// 1. filter() : Selecting with a predicate
 	static void filterLap(Set<Laptop> s)
 	{
 				 s.stream().filter(lap -> lap.getLapPrice() >= 100000).forEach(System.out::println);
 				
 	}
+	
+	// 2. selecting only unique values, distinct(),
+	static void uniqueValues(Set<Laptop> set)
+	{
+		set.parallelStream().distinct().forEachOrdered(System.out::println);
+	}
+	
 	public static void main(String[] args) 
 	{
 		Set<Laptop> lapSet = new HashSet();
