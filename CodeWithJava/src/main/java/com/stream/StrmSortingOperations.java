@@ -13,7 +13,7 @@ public class StrmSortingOperations
 	static void naturalSorting(Set<Laptop> set)
 	{
 //		set.stream().sequential().forEach(System.out::println);
-		set.stream().sorted().forEach(System.out::println);
+		set.stream().sorted().skip(2).forEach(System.out::println);
 	}
 	public static void main(String[] args) 
 	{
