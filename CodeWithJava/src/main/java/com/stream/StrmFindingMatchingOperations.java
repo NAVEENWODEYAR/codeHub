@@ -11,7 +11,8 @@ public class StrmFindingMatchingOperations
 	// 1. anyMatch() : Any one element matches, Short-circuiting Terminal Operation.,
 	static void anyMatchInColln(Set<Laptop> lap)
 	{
-		boolean anyMatch = lap.stream().anyMatch(lp->lp.getLapPrice()>100000);
+		if(lap.stream().anyMatch(lp->lp.getLapPrice()>100000))
+			System.out.println(lap);
 		
 	}
 	public static void main(String[] args) 
@@ -26,7 +27,7 @@ public class StrmFindingMatchingOperations
 					
 		// invoke the static methods,
 					System.out.println("\n************\n");
-					System.out.println("\n************\n");
+					anyMatchInColln(lapSet);
 					System.out.println("\n************\n");
 	}
 }
