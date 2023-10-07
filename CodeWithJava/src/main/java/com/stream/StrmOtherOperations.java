@@ -15,12 +15,8 @@ public class StrmOtherOperations
 	//  This method is only to support debugging where you want to see the elements as you pass in a pipeline.
 	static void debugStream(List<Laptop> list)
 	{
-		list.stream()
-			.filter(lap ->lap.getLapPrice()>100000)
-			.peek(lap ->System.out.println(lap.getLapName())
-			.map(String::toUpperCase).pee
-			
-			}
+		
+	}
 	public static void main(String[] args) 
 	{
 		List<Laptop> lapSet = new ArrayList();
