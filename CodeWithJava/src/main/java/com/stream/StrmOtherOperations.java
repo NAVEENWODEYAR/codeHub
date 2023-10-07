@@ -7,7 +7,7 @@ public class StrmOtherOperations
 	// 1. toArray() : Stream to array,
 	static void collnToArray(List<Laptop> list)
 	{
-		Laptop[] array = (Laptop[]) list.stream().toArray();
+		Object[] array = list.stream().toArray();
 		System.out.println(Arrays.toString(array));
 	}
 	
@@ -15,8 +15,12 @@ public class StrmOtherOperations
 	//  This method is only to support debugging where you want to see the elements as you pass in a pipeline.
 	static void debugStream(List<Laptop> list)
 	{
-		
-	}
+		list.stream()
+			.filter(lap ->lap.getLapPrice()>100000)
+			.peek(lap ->System.out.println(lap.getLapName())
+			.map(String::toUpperCase).pee
+			
+			}
 	public static void main(String[] args) 
 	{
 		List<Laptop> lapSet = new ArrayList();
