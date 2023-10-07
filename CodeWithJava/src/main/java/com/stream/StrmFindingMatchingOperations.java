@@ -12,8 +12,14 @@ public class StrmFindingMatchingOperations
 	static void anyMatchInColln(Set<Laptop> lap)
 	{
 		if(lap.stream().anyMatch(lp->lp.getLapPrice()>100000))
-			System.out.println(lap);
+			System.out.println(lap); 
 		
+	}
+	
+	//  2. findFirst
+	static void findFirstElement(Set<Laptop> set)
+	{
+		set.stream().findFirst().ifPresent(System.out::println);
 	}
 	public static void main(String[] args) 
 	{
