@@ -5,10 +5,17 @@ import java.util.*;
 public class StrmOtherOperations 
 {
 	// 1. toArray() : Stream to array,
-	static void collnToArray(List list)
+	static void collnToArray(List<Laptop> list)
 	{
-		Object[] array = list.stream().toArray();
+		Laptop[] array = (Laptop[]) list.stream().toArray();
 		System.out.println(Arrays.toString(array));
+	}
+	
+	// 2. peek() ,Stream<T> peek(Consumer<T> action)
+	//  This method is only to support debugging where you want to see the elements as you pass in a pipeline.
+	static void debugStream(List<Laptop> list)
+	{
+		
 	}
 	public static void main(String[] args) 
 	{
@@ -22,6 +29,7 @@ public class StrmOtherOperations
 					
 		// invoke the static methods,
 					System.out.println("\n************\n");
+					collnToArray(lapSet);
 					System.out.println("\n************\n");
 	}
 }
