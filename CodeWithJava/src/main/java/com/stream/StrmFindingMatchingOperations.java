@@ -21,6 +21,12 @@ public class StrmFindingMatchingOperations
 	{
 		set.stream().findFirst().ifPresent(System.out::println);
 	}
+	
+	//  findAny() : Finding any element
+	static void findAnyElement(Set<Laptop> set)
+	{
+		set.stream().findAny().ifPresent(System.out::println);
+	}
 	public static void main(String[] args) 
 	{
 		Set<Laptop> lapSet = new HashSet();
@@ -34,6 +40,9 @@ public class StrmFindingMatchingOperations
 		// invoke the static methods,
 					System.out.println("\n************\n");
 					anyMatchInColln(lapSet);
+					System.out.println("\n************\n");
+					findFirstElement(lapSet);
+					System.out.println("\n************\n");
 					System.out.println("\n************\n");
 	}
 }
