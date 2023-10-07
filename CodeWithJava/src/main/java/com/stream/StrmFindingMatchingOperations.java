@@ -8,12 +8,11 @@ import java.util.stream.Stream;
 
 public class StrmFindingMatchingOperations 
 {
-	// Mapping operations,
-	// 1. map() : Applies a function.,
-	static void returnLength(Set<Laptop> set)
+	// 1. anyMatch() : Any one element matches, Short-circuiting Terminal Operation.,
+	static void anyMatchInColln(Set<Laptop> lap)
 	{
-		set.stream().map(lap-> lap.getLapName().length()).forEach(System.out::print);
-		set.stream().mapToInt(lap -> lap.getLapName().length()).forEach(System.out::println);
+		boolean anyMatch = lap.stream().anyMatch(lp->lp.getLapPrice()>100000);
+		
 	}
 	public static void main(String[] args) 
 	{
@@ -27,7 +26,6 @@ public class StrmFindingMatchingOperations
 					
 		// invoke the static methods,
 					System.out.println("\n************\n");
-					returnLength(lapSet);
 					System.out.println("\n************\n");
 					System.out.println("\n************\n");
 	}
