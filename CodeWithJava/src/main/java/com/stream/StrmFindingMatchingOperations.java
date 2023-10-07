@@ -43,6 +43,7 @@ public class StrmFindingMatchingOperations
 					System.out.println("\n************\n");
 					findFirstElement(lapSet);
 					System.out.println("\n************\n");
+					findAnyElement(lapSet);
 					System.out.println("\n************\n");
 	}
 }
