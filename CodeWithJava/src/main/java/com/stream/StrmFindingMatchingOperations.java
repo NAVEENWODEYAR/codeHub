@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class StrmFindingSelectionOperations 
+public class StrmFindingMatchingOperations 
 {
 	// Mapping operations,
 	// 1. map() : Applies a function.,
