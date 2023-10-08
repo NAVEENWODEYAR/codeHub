@@ -19,7 +19,7 @@ public class StrmReducingOperations
 		int min = Arrays.stream(num).min().getAsInt();
 		double avg = Arrays.stream(num).average().getAsDouble();
 		int max = Arrays.stream(num).max().getAsInt();
-		System.out.println("\nMinimum value->"+min+"\nAverage value->"+avg+"\nMaximum value->"+max);
+		System.out.println("\n1. Minimum value->"+min+"\n2. Average value->"+avg+"\n3. Maximum value->"+max);
 	}
 	public static void main(String[] args) 
 	{
