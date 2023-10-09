@@ -20,7 +20,7 @@ public class StrmMappingOperations
 		set.parallelStream().distinct().forEachOrdered(System.out::println);
 	}
 	
-	// 3. limiting first n elements,limit() and skip().,
+	// 3. limiting & skipping first n elements,limit() and skip().,
 	static void limitElements(Set<Laptop> set)
 	{
 		set.parallelStream().skip(1).limit(4).forEach(System.out::println);
@@ -28,7 +28,7 @@ public class StrmMappingOperations
 	
 	public static void main(String[] args) 
 	{
-		Set<Laptop> lapSet = new HashSet();
+		Set<Laptop> lapSet = new HashSet(48);
 					lapSet.add(new Laptop(1,"X1Carbon","Lenovo",2017,198765));
 					lapSet.add(new Laptop(15,"X1Carbon","Lenovo",2017,198765));
 					lapSet.add(new Laptop(7,"Yoga","Lenovo",2019,98765));
