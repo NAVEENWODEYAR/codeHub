@@ -1,9 +1,6 @@
 package com.stream;
 
-import java.util.HashSet;
-import java.util.Set;
-import java.util.TreeSet;
-import java.util.stream.Stream;
+import java.util.*;
 
 public class StrmMappingOperations 
 {
