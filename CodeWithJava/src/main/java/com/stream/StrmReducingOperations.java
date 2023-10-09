@@ -13,7 +13,7 @@ public class StrmReducingOperations
 		System.out.println(sum.getAsInt());
 	}
 	
-	// 2. min()&max() : Finding the minimum & maximum value in the collection using stream.
+	// 2. min()&max() : Finding the minimum & maximum value present in the collection using stream.
 	static void minimumValue(int[] num)
 	{
 		int min = Arrays.stream(num).min().getAsInt();
